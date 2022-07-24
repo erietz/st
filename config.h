@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono:pixelsize=20:antialias=true:autohint=true";
+static char *font = "Fira Code:pixelsize=20:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
 /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
@@ -99,28 +99,63 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+/* color schemes {{{ */
+enum {
+	norm_black,
+	norm_red,
+	norm_green,
+	norm_yellow,
+	norm_blue,
+	norm_magenta,
+	norm_cyan,
+	norm_white,
+	bright_black,
+	bright_red,
+	bright_green,
+	bright_yellow,
+	bright_blue,
+	bright_magenta,
+	bright_cyan,
+	bright_white,
+};
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 
-    /* 8 normal colors */
-    [0] = "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-    [1] = "#cc241d", /* red     */
-    [2] = "#98971a", /* green   */
-    [3] = "#d79921", /* yellow  */
-    [4] = "#458588", /* blue    */
-    [5] = "#b16286", /* magenta */
-    [6] = "#689d6a", /* cyan    */
-    [7] = "#a89984", /* white   */
+    /* [norm_black] = "#282828", */
+    /* [norm_red] = "#cc241d", */
+    /* [norm_green] = "#98971a", */
+    /* [norm_yellow] = "#d79921", */
+    /* [norm_blue] = "#458588", */
+    /* [norm_magenta] = "#b16286", */
+    /* [norm_cyan] = "#689d6a", */
+    /* [norm_white] = "#a89984", */
+    /* [bright_black]  = "#928374", */
+    /* [bright_red]  = "#fb4934", */
+    /* [bright_green] = "#b8bb26", */
+    /* [bright_yellow] = "#fabd2f", */
+    /* [bright_blue] = "#83a598", */
+    /* [bright_magenta] = "#d3869b", */
+    /* [bright_cyan] = "#8ec07c", */
+    /* [bright_white] = "#ebdbb2", */
 
-    /* 8 bright colors */
-    [8]  = "#928374", /* black   */
-    [9]  = "#fb4934", /* red     */
-    [10] = "#b8bb26", /* green   */
-    [11] = "#fabd2f", /* yellow  */
-    [12] = "#83a598", /* blue    */
-    [13] = "#d3869b", /* magenta */
-    [14] = "#8ec07c", /* cyan    */
-    [15] = "#ebdbb2", /* white   */
+    [norm_black] = "#282c34",
+    [norm_red] = "#fc8d62",
+    [norm_green] = "#a6d854",
+    [norm_yellow] = "#ffd92f",
+    [norm_blue] = "#8da0cb",
+    [norm_magenta] = "#e78ac3",
+    [norm_cyan] = "#66c2a5",
+    [norm_white] = "#d8d8d8",
+    [bright_black]  = "#928374",
+    [bright_red]  = "#fb8072",
+    [bright_green] = "#b3de69",
+    [bright_yellow] = "#ffffb3",
+    [bright_blue] = "#80b1d3",
+    [bright_magenta] = "#bebada",
+    [bright_cyan] = "#8dd3c7",
+    [bright_white] = "#d8d8d8",
+
 };
 
 /*
@@ -131,6 +166,8 @@ unsigned int defaultfg = 15;
 unsigned int defaultbg = 0;
 static unsigned int defaultcs = 15;
 static unsigned int defaultrcs = 257;
+
+/* }}} */
 
 /*
  * Default shape of cursor
