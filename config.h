@@ -101,61 +101,42 @@ unsigned int tabspaces = 8;
 
 /* color schemes {{{ */
 enum {
-	norm_black,
-	norm_red,
-	norm_green,
-	norm_yellow,
-	norm_blue,
-	norm_magenta,
-	norm_cyan,
-	norm_white,
-	bright_black,
-	bright_red,
-	bright_green,
-	bright_yellow,
-	bright_blue,
-	bright_magenta,
-	bright_cyan,
-	bright_white,
+	norm_black,     // 0
+	norm_red,       // 1
+	norm_green,     // 2
+	norm_yellow,    // 3
+	norm_blue,      // 4
+	norm_magenta,   // 5
+	norm_cyan,      // 6
+	norm_white,     // 7
+	bright_black,   // 8
+	bright_red,     // 9
+	bright_green,   // 10
+	bright_yellow,  // 11
+	bright_blue,    // 12
+	bright_magenta, // 13
+	bright_cyan,    // 14
+	bright_white,   // 15
 };
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-
-    /* [norm_black] = "#282828", */
-    /* [norm_red] = "#cc241d", */
-    /* [norm_green] = "#98971a", */
-    /* [norm_yellow] = "#d79921", */
-    /* [norm_blue] = "#458588", */
-    /* [norm_magenta] = "#b16286", */
-    /* [norm_cyan] = "#689d6a", */
-    /* [norm_white] = "#a89984", */
-    /* [bright_black]  = "#928374", */
-    /* [bright_red]  = "#fb4934", */
-    /* [bright_green] = "#b8bb26", */
-    /* [bright_yellow] = "#fabd2f", */
-    /* [bright_blue] = "#83a598", */
-    /* [bright_magenta] = "#d3869b", */
-    /* [bright_cyan] = "#8ec07c", */
-    /* [bright_white] = "#ebdbb2", */
-
-    [norm_black] = "#282c34",
-    [norm_red] = "#fc8d62",
-    [norm_green] = "#a6d854",
-    [norm_yellow] = "#ffd92f",
-    [norm_blue] = "#8da0cb",
-    [norm_magenta] = "#e78ac3",
-    [norm_cyan] = "#66c2a5",
-    [norm_white] = "#d8d8d8",
-    [bright_black]  = "#928374",
-    [bright_red]  = "#fb8072",
-    [bright_green] = "#b3de69",
-    [bright_yellow] = "#ffffb3",
-    [bright_blue] = "#80b1d3",
-    [bright_magenta] = "#bebada",
-    [bright_cyan] = "#8dd3c7",
-    [bright_white] = "#d8d8d8",
-
+	[norm_black]     = "#202224",
+	[norm_red]       = "#fc8d62",
+	[norm_green]     = "#a6d854",
+	[norm_yellow]    = "#ffd92f",
+	[norm_blue]      = "#8da0cb",
+	[norm_magenta]   = "#e78ac3",
+	[norm_cyan]      = "#66c2a5",
+	[norm_white]     = "#d8d8d8",
+	[bright_black]   = "#928374",
+	[bright_red]     = "#fb8072",
+	[bright_green]   = "#b3de69",
+	[bright_yellow]  = "#ffffb3",
+	[bright_blue]    = "#80b1d3",
+	[bright_magenta] = "#bebada",
+	[bright_cyan]    = "#8dd3c7",
+	[bright_white]   = "#d8d8d8",
 };
 
 /*
