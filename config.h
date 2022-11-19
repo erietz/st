@@ -5,11 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Roboto Mono:pixelsize=20:antialias=true:autohint=true";
+static char *font = "Roboto Mono:size=12:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-/*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
-	"Hack Nerd Font Mono:pixelsize=20:antialias=true:autohint=true",
+	"Hack Nerd Font Mono:size=12:antialias=true:autohint=true",
 };
 
 static int borderpx = 2;
